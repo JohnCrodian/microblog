@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Microblog</title>
+	<link rel="stylesheet" type="text/css" href="css/microblog.css">
+	<script type="text/javascript" src="javascript/scripts.js"></script>
+</head>
+<body>
+
+<h1>Microblog Page</h1>
+<p>Welcome to this highly functional blogging app</p>
+	<%= flash[:notice] if flash[:notice] %>
+	<%= flash[:alert] if flash[:alert] %>
+	<%= yield %>
+
+</body>
+</html>

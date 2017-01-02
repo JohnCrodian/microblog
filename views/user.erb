@@ -1,0 +1,14 @@
+<h1><%= @user.name %>'s Profile</h1>
+
+<p> <a href="/posts/new">Hey, <%= @user.name %>, what's on yer mind?</a></p>
+
+
+<h3>Delete user?</h3>
+<form method="POST" action="/users/<%= @user.id %>/delete">
+<input type="submit" value="Delete User">
+</form>
+
+<h3>Do you wanna maybe log out?</h3>
+<form method="POST" action="/logout">
+<input type="submit" value="Yeah boo log me out">
+</form>

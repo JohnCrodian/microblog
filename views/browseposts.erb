@@ -1,0 +1,7 @@
+<h2>TOP TEN MOST RECENT, EXCELLENT POSTS FROM THE GREAT ONES</h2>
+
+<% @posts.each do |post| %>
+	<p> 
+	<%= post.user.name %>
+	: <%= post.content %> <p>
+<% end %>
