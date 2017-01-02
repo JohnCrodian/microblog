@@ -17,6 +17,10 @@ get '/' do
 	erb :home
 end
 
+get '/home' do
+	
+end
+
 
 get '/users' do
 	@users = User.all

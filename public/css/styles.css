@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css?family=Amatic+SC");
+.banner {
+  display: block;
+  padding: 10px;
+  font-family: 'Amatic SC';
+  background-color: black;
+  color: white;
+  width: 100%;
+  height: 100px;
+  margin-bottom: 10px; }
+  .banner h2 {
+    display: inline-block;
+    float: left;
+    padding-right: 10px; }
+
+#navlist {
+  list-style: none;
+  display: inline-block;
+  float: left; }
+  #navlist li {
+    float: left;
+    display: inline;
+    padding: 10px;
+    color: white;
+    text-decoration: none; }
+  #navlist a:visited {
+    color: white; }
+
+body {
+  background-color: black; }
+
+.loginform {
+  border: 5px solid white;
+  width: 500px;
+  padding: 10px;
+  margin-top: 50px;
+  margin-right: auto;
+  margin-left: auto;
+  font-family: sans-serif;
+  background-color: black;
+  color: white; }
+
+/*# sourceMappingURL=styles.css.map */

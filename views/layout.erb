@@ -2,16 +2,25 @@
 <html>
 <head>
 	<title>Microblog</title>
-	<link rel="stylesheet" type="text/css" href="css/microblog.css">
-	<script type="text/javascript" src="javascript/scripts.js"></script>
+	<link rel="stylesheet" type="text/css" href="/css/styles.css">
+	<script type="text/javascript" src="/javascript/scripts.js"></script>
 </head>
 <body>
 
-<h1>Microblog Page</h1>
-<p>Welcome to this highly functional blogging app</p>
+<div class="banner">
+	<h1>Gaping Void</h1>
+	<h2>The ideal place to toss your feelings</h2>
+	<ul id="navlist">
+		<li><a href='/home'>Home</a></li>
+		<li><a href='/users'>User Profiles</a></li>
+		<li><a href='/browseposts'>Newest Posts</a></li>
+	</ul>
+</div>
+
 	<%= flash[:notice] if flash[:notice] %>
 	<%= flash[:alert] if flash[:alert] %>
 	<%= yield %>
+
 
 </body>
 </html>
