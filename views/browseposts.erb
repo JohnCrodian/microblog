@@ -1,7 +1,8 @@
-<h2>TOP TEN MOST RECENT, EXCELLENT POSTS FROM THE GREAT ONES</h2>
+<div class="usertable">
+<h2 id="postheader">NEWEST MEANINGFUL POSTS</h2>
 
 <% @posts.each do |post| %>
-	<p> 
+	<p class="post"> 
 	<%= post.user.name %>
 	: <%= post.content %> <p>
 <% end %>
