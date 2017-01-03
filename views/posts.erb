@@ -1,3 +1,7 @@
+<div class="usertable">
+
+<h2 class="postheader"><%= @user.name %>'s Posts</h2>
 <% @user.posts.each do |post| %>
-	<p> <%= post.content %> <p>
+	<p class='post'> <%= post.content %> <p>
 <% end %>
+</div>

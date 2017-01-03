@@ -1,15 +1,26 @@
-<h1><%= @user.name %>'s Profile</h1>
+<div class="profiletable">
+<h2 class="postheader"><%= @user.name %>'s Profile</h2>
 
 <p> <a href="/posts/new">Hey, <%= @user.name %>, what's on yer mind?</a></p>
 
+<h2 class="postheader">Your most recent posts</h2>
+<% @user.posts.each do |post| %>
+	<p class='post'> <%= post.content %> <p>
+<% end %>
 
-<h3>Delete user?</h3>
+<h2 class="postheader">Edit account info?</h2>
+<form method="POST" action="/users/<%= @user.id %>/edit">
+<input type="submit" value="Edit account info">
+</form>
+
+<h2 class="postheader">Delete user?</h2>
 <form method="POST" action="/users/<%= @user.id %>/delete">
 <input type="submit" value="Delete User">
 </form>
 
-<h3>Do you wanna maybe log out?</h3>
+<h2 class="postheader">Do you wanna maybe log out?</h2>
 <form method="POST" action="/logout">
 <input type="submit" value="Yeah boo log me out">
 </form>
+</div>
 

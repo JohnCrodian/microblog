@@ -1,8 +1,9 @@
 <div class="usertable">
-<h2 id="postheader">NEWEST MEANINGFUL POSTS</h2>
+<h2 class="postheader">NEWEST MEANINGFUL POSTS</h2>
 
 <% @posts.each do |post| %>
 	<p class="post"> 
 	<%= post.user.name %>
-	: <%= post.content %> <p>
+	: <%= post.content %> </p>
 <% end %>
+</div>
